@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spendings Pie Chart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Spendings Pie Chart!</h1>
+  </header>
+
+  <main>
+    <p>Welcome!</p>
+    <p>Here is a quick and easy way to visualize your monthly spendings</p>
+
+    <button id="clickMe">Click here to get started</button>
+    <p id="message"></p>
+
+    <form id="spendingForm" style="display:none;">
+    <div id="categoriesContainer">
+    <div class="category-row">
+      <input type="text" placeholder="Category">
+      <input type="number" placeholder="Amount">
+    </div>
+  </div>
+  <button type="button" id="addCategoryBtn">+ Add Category</button>
+  <button type="submit">Generate Chart</button>
+  </form>
+
+  <canvas id="myChart" width="400" height="400"></canvas>
+
+  <script src="script.js"></script>
+  </main>
+
+  <footer>
+    <p>© 2025 Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
